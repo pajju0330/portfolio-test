@@ -1,0 +1,152 @@
+.navbar {
+    background: #000000
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: skyblue;
+    color: skyblue;
+    transition: 0.4s
+}
+
+.nav-item:hover::after {
+    width: 100%
+}
+
+.nav-link:hover{
+    color: #fff;
+}
+
+.nav-link {
+    padding: 25px 5px;
+    transition: 0.2s
+}
+
+.card{
+    border:none;
+
+    position:relative;
+    overflow:hidden;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.card:before{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:#87CEFA;
+    transform:scaleY(1);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:after{
+    
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background-color:	#1E90FF;
+    transform:scaleY(0);
+    transition:all 0.5s;
+    transform-origin: bottom
+}
+
+.card:hover::after{
+    transform:scaleY(1);
+}
+
+
+.fonts{
+    font-size:11px;
+}
+
+.social-list{
+    display:flex;
+    list-style:none;
+    justify-content:center;
+    padding:0;
+}
+
+.social-list li{
+    padding:10px;
+    color:	#1E90FF;
+    font-size:19px;
+}
+
+
+.buttons button:nth-child(1){
+       border:1px solid #1E90FF !important;
+       color:#1E90FF;
+       height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+       border:1px solid #1E90FF !important;
+       color:#fff;
+       height:40px;
+       background-color:#1E90FF;
+}
+
+.buttons button:nth-child(2){
+       border:1px solid #1E90FF !important;
+       background-color:#1E90FF;
+       color:#fff;
+        height:40px;
+}
+
+.employment-section{
+    /* border: 2px solid red; */
+    /* width: 100%; */
+    margin-left: 10px;
+    margin-top: 5rem;
+    /* background-color: whitesmoke; */
+}
+.timeline {
+    border-left: 1px solid hsl(0, 0%, 90%);
+    position: relative;
+    list-style: none;
+  }
+  
+  .timeline .timeline-item {
+    position: relative;
+  }
+  
+  .timeline .timeline-item:after {
+    position: absolute;
+    display: block;
+    top: 0;
+  }
+  
+  .timeline .timeline-item:after {
+    background-color: hsl(0, 0%, 90%);
+    left: -38px;
+    border-radius: 50%;
+    height: 11px;
+    width: 11px;
+    content: "";
+  }
+  .fa-building-o{
+    /* border: 2px solid red; */
+    margin-right: 15px;
+  }
+
+  hr.new{
+    border-top: 3px dashed black;
+  }
+
+  .timeline-1 .event:after {
+    -webkit-box-shadow: 0 0 0 3px #b565a7;
+    box-shadow: 0 0 0 3px #b565a7;
+  }
+
